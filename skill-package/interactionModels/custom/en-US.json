@@ -1,0 +1,47 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "friend grok",
+            "intents": [
+                {
+                    "name": "AskIntent",
+                    "slots": [
+                        {
+                            "name": "prompt",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "what is {prompt}",
+                        "tell me about {prompt}",
+                        "explain {prompt}",
+                        "break down {prompt}",
+                        "simplify {prompt}",
+                        "how does {prompt} work",
+                        "what's your take on {prompt}",
+                        "help me understand {prompt}",
+                        "what do you think about {prompt}",
+                        "give me the simple version of {prompt}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

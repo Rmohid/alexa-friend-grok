@@ -1,0 +1,54 @@
+{
+    "manifest": {
+        "publishingInformation": {
+            "locales": {
+                "en-US": {
+                    "summary": "Chat with Grok, your friendly AI companion who makes complex topics simple and fun",
+                    "examplePhrases": [
+                        "Alexa, ask friend grok to explain blockchain",
+                        "Alexa, ask friend grok what's quantum computing",
+                        "Alexa, ask friend grok about machine learning"
+                    ],
+                    "keywords": [
+                        "AI",
+                        "education",
+                        "learning",
+                        "knowledge",
+                        "assistant",
+                        "grok"
+                    ],
+                    "name": "Friend Grok",
+                    "description": "Chat with Grok, your AI friend who breaks down complex topics into simple, engaging explanations using a friendly American male voice (Justin). Perfect for understanding difficult concepts in a fun, approachable way.",
+                    "smallIconUri": "file://assets/images/en-US_smallIcon.png",
+                    "largeIconUri": "file://assets/images/en-US_largeIcon.png"
+                }
+            },
+            "isAvailableWorldwide": true,
+            "testingInstructions": "Required OpenRouter API key must be set in environment variables as OPENROUTER_API_KEY.",
+            "category": "KNOWLEDGE_AND_TRIVIA",
+            "distributionCountries": []
+        },
+        "apis": {
+            "custom": {
+                "endpoint": {
+                    "uri": "arn:aws:lambda:us-east-1:${YOUR_ACCOUNT_ID}:function:${SKILL_NAME}"
+                },
+                "interfaces": []
+            }
+        },
+        "manifestVersion": "1.0",
+        "privacyAndCompliance": {
+            "allowsPurchases": false,
+            "locales": {
+                "en-US": {
+                    "privacyPolicyUrl": "",
+                    "termsOfUseUrl": ""
+                }
+            },
+            "isExportCompliant": true,
+            "containsAds": false,
+            "isChildDirected": false,
+            "usesPersonalInfo": false
+        }
+    }
+}
